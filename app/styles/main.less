@@ -1,25 +1,32 @@
 @import "bower_components/bootstrap/less/bootstrap";
+
 // bower:less
 // endbower
 
-.nav.nav-pills {
-    margin-top:89px;
+h2 {
+    font-weight: bold;
+    font-size: 2.4em;
 }
 
-.header .logo{
-    margin:1em;
+.nav.nav-pills {
+    margin-top: 89px;
+}
+
+.header .logo {
+    margin: 1em;
 }
 
 .header {
-    margin-bottom:1em;
+    margin-bottom: 1em;
 }
 
 .nav-pills > li {
-    margin-left:5px;
+    margin-left: 5px;
     &:active {
         a {
             background-color: @blue;
         }
+
     }
     > a {
         font-weight: bold;
@@ -56,7 +63,7 @@ body {
 
 /* Custom page header */
 .header {
-    position:relative;
+    position: relative;
     /* Make the masthead heading the same height as the navigation */
     h3 {
         margin-top: 0;
@@ -87,29 +94,49 @@ body {
     }
 }
 
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-    p + h4 {
-        margin-top: 28px;
-    }
-}
-
 .hero {
     background-image: url(../images/ngsog/hero1.jpg);
     height: 400px;
-
-
-
-
 }
+
 .slogan {
     background-image: url(../images/bg-3.gif);
     p {
-        color:@white;
+        color: @white;
         font-size: 1.4em;
         text-transform: uppercase;
-        margin:2em;
+        margin: 2em;
+    }
+}
+
+.bg-dark-grey {
+    background-image: url(../images/bg-2.gif);
+
+    .marketing {
+        .col{
+            width:31%;
+            margin-left:2%;
+            float:left;
+            background-image: url(../images/bg-1.gif);
+            padding: 1em 0;
+            transition: all 0.4s ease;
+            &:hover{
+                background-image: url(../images/bg-blue-noise.png);
+            }
+        }
+        .summary {
+            color: @white;
+            padding: 0 1.3em;
+        }
+        img {
+            float: right;
+            margin-left:1.3em;
+        }
+
+        margin: 40px 0;
+        p + h4 {
+            margin-top: 28px;
+        }
     }
 }
 
