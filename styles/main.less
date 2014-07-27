@@ -1,7 +1,9 @@
 @import "bootstrap-imports";
 @import "pictures-column";
 @import "fluid-container";
+@import "header";
 @import "kontakt";
+@import "quality";
 
 // bower:less
 // endbower
@@ -20,32 +22,6 @@ article {
   padding: 1.3em;
 }
 
-.nav-pills > li {
-  margin-left: 5px;
-  &:active {
-    a {
-      background-color: @blue;
-    }
-  }
-  > a {
-    font-weight: bold;
-    color: #000;
-    background-color: #fff;
-
-    &:hover {
-      background: @blue;
-      color: #fff;
-    }
-  }
-}
-
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
 /* Space out content a bit */
 body {
   padding-top: 20px;
@@ -60,20 +36,7 @@ body {
   padding-right: 15px;
 }
 
-/* Custom page header */
-.header {
-  position: relative;
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-  .clearfix();
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 /* Custom page footer */
 .footer {
@@ -116,6 +79,7 @@ body {
     .summary {
       color: @white;
       padding: 0 1.3em;
+      min-width: 12em;
     }
     img {
       float: right;
@@ -150,14 +114,6 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: @screen-sm) {
-  .nav.nav-pills {
-    margin-top: 75px;
-  }
-
-  .header .logo {
-    margin: 0 1em;
-  }
-
   .container {
     max-width: 1200px;
   }
@@ -174,16 +130,4 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
-
-  /* Space out the masthead */
-  .header {
-    img.logo {
-      float: left;
-    }
-
-    ul.nav {
-      float: right;
-    }
-  }
-
 }
