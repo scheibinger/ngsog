@@ -12,7 +12,7 @@ author:
 # Grunt handles images and assets.
 exclude: [ 'fonts']
 
-include: ['.htaccess','styles']
+include: ['.htaccess','CNAME','styles']
 
 # _config.build.yml sets future and show_drafts to false on `grunt build`
 future: true
