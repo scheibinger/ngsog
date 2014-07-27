@@ -38,4 +38,6 @@ dist
 node_modules
 .tmp
 
+# other ngsog tmp files
 zrzut
+tmp

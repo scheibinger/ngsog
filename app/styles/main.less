@@ -1,6 +1,7 @@
 @import "bootstrap-imports";
 @import "pictures-column";
 @import "fluid-container";
+@import "gallery";
 @import "header";
 @import "kontakt";
 @import "quality";
@@ -11,7 +12,11 @@
 h2 {
 
   font-weight: bold;
-  font-size: 2.4em;
+  font-size: 2em;
+}
+
+h5 {
+  text-decoration: underline;
 }
 
 .header {
@@ -20,6 +25,17 @@ h2 {
 
 article {
   padding: 1.3em;
+  text-align: justify;
+
+  img.img-indent{
+    float:left;
+    margin-right:1em;
+    margin-bottom:1em;
+  }
+
+  img.big-picture{
+    margin-top:4em;
+  }
 }
 
 /* Space out content a bit */
@@ -66,6 +82,7 @@ body {
 
   .marketing {
     .col {
+      font-size:0.9em;
       width: 31%;
       margin-left: 2%;
       float: left;
@@ -100,6 +117,14 @@ body {
 
 @media screen and (max-width: @screen-xs-max) {
   .hero {
+    display:none;
+  }
+
+  article img.img-indent{
+    float:none;
+  }
+
+  img.big-picture{
     display:none;
   }
 
