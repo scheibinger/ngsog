@@ -1,0 +1,22 @@
+<nav>
+  <div class="header">
+    <img class="logo" src="/images/ngsog/logo.png" alt="ngsog">
+
+    <ul class="nav nav-pills">
+      {% assign url = page.url|remove:'index.html'|remove:'/' %}
+      {% for link in site.navigation %}
+      {% assign currentUrl = link.url|remove:'/' %}
+      {% assign state = '' %}
+      {% if url == currentUrl %}
+        {% assign state = 'active ' %}
+      {% endif %}
+      <li class="{{ state }}"><a
+        href="/{{ currentUrl }}"
+        title="{{ link.title }}">{{ link.text }}</a>
+      </li>
+      {% endfor %}
+
+
+    </ul>
+  </div>
+</nav>

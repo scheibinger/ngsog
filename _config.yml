@@ -23,3 +23,19 @@ markdown: redcarpet
 #   extensions: ['fenced_code_blocks', 'smart']
 
 pygments: false
+
+navigation:
+- text: Start
+  url:
+- text: Firma
+  url: /firma/
+- text: Produkcja
+  url: /produkcja/
+- text: Oferta
+  url: /oferta/
+- text: Jakość
+  url: /jakosc/
+- text: Certyfikaty
+  url: /certyfikaty/
+- text: Kontakt
+  url: /kontakt/
