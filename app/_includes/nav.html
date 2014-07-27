@@ -1,6 +1,8 @@
 <nav>
   <div class="header">
-    <img class="logo" src="/images/ngsog/logo.png" alt="ngsog">
+    <a href="/" class="logo">
+      <img  src="/images/ngsog/logo.png" alt="ngsog">
+    </a>
 
     <ul class="nav nav-pills">
       {% assign url = page.url|remove:'index.html'|remove:'/' %}
@@ -8,7 +10,7 @@
       {% assign currentUrl = link.url|remove:'/' %}
       {% assign state = '' %}
       {% if url == currentUrl %}
-        {% assign state = 'active ' %}
+      {% assign state = 'active ' %}
       {% endif %}
       <li class="{{ state }}"><a
         href="/{{ currentUrl }}"

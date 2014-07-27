@@ -1,0 +1,58 @@
+@import "bootstrap-imports";
+
+.nav-pills > li {
+  margin-left: 5px;
+  &:active {
+    a {
+      background-color: @blue;
+    }
+  }
+  > a {
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+
+    &:hover {
+      background: @blue;
+      color: #fff;
+    }
+  }
+}
+
+/* Custom page header */
+.header {
+  position: relative;
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+  .clearfix();
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: @screen-sm) {
+  .nav.nav-pills {
+    margin-top: 75px;
+  }
+
+  .header .logo {
+    margin: 0 1em;
+  }
+
+  /* Space out the masthead */
+  .header {
+    .logo {
+      display:block;
+      float: left;
+    }
+
+    ul.nav {
+      float: right;
+    }
+  }
+}
