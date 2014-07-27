@@ -10,10 +10,9 @@ author:
   email: rscheibinger@ebay.com
 
 # Grunt handles images and assets.
-exclude: ['img', 'css', 'js', 'fonts',
-          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+exclude: [ 'fonts']
 
-include: ['.htaccess']
+include: ['.htaccess','styles']
 
 # _config.build.yml sets future and show_drafts to false on `grunt build`
 future: true
