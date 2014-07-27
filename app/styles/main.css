@@ -3393,6 +3393,68 @@ article.kontakt .col {
     clear: both;
   }
 }
+#cookie-bar {
+  background: #f7f7f7;
+  line-height: 24px;
+  text-align: center;
+  padding: 5px;
+}
+#cookie-bar:before,
+#cookie-bar:after {
+  content: " ";
+  display: table;
+}
+#cookie-bar:after {
+  clear: both;
+}
+#cookie-bar:before,
+#cookie-bar:after {
+  content: " ";
+  display: table;
+}
+#cookie-bar:after {
+  clear: both;
+}
+#cookie-bar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#cookie-bar.fixed.bottom {
+  bottom: 0;
+  top: auto;
+}
+#cookie-bar p {
+  margin: 0;
+  padding: 0;
+}
+#cookie-bar a {
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 0 6px;
+  margin-left: 8px;
+}
+#cookie-bar .cb-enable {
+  background: #8ed8f8;
+}
+#cookie-bar .cb-enable:hover {
+  background: #8ed8f8;
+}
+#cookie-bar .cb-disable {
+  background: #8ed8f8;
+}
+#cookie-bar .cb-disable:hover {
+  background: #8ed8f8;
+}
+#cookie-bar .cb-policy {
+  background: #0033bb;
+}
+#cookie-bar .cb-policy:hover {
+  background: #0055dd;
+}
 h2 {
   font-weight: bold;
   font-size: 2em;
@@ -3414,11 +3476,6 @@ article img.img-indent {
 }
 article img.big-picture {
   margin-top: 4em;
-}
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
