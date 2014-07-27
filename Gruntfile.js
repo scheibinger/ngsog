@@ -171,7 +171,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:example_user/example_webapp.git',
+          remote: 'git@github.com:scheibinger/ngsog.git',
           branch: 'gh-pages'
         }
       },
@@ -207,5 +207,10 @@ module.exports = function (grunt) {
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
     'concurrent:dist'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'build',
+    'buildcontrol:pages'
   ]);
 };
