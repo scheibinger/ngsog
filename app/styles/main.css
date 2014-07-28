@@ -3320,6 +3320,10 @@ article .pictures-column a {
 .gallery img {
   margin: 0.4em;
 }
+nav {
+  -webkit-box-shadow: 0 4px 4px -2px #cccccc;
+  box-shadow: 0 4px 4px -2px #cccccc;
+}
 .nav-pills > li {
   margin-left: 5px;
 }
@@ -3364,10 +3368,30 @@ article .pictures-column a {
 .header:after {
   clear: both;
 }
+.header .logos {
+  width: 332px;
+  height: 126px;
+}
+.header .logos > div {
+  float: left;
+}
+.header .wietpol-logo {
+  position: relative;
+  top: 90px;
+  display: inline-block;
+}
+.header .wietpol-logo span {
+  position: relative;
+  top: 5px;
+  font-size: 0.8em;
+}
+.header .wietpol-logo img {
+  width: 100px;
+}
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .nav.nav-pills {
-    margin-top: 75px;
+    margin-top: -55px;
   }
   .header .logo {
     margin: 0 1em;
@@ -3461,9 +3485,6 @@ h2 {
 }
 h5 {
   text-decoration: underline;
-}
-.header {
-  margin-bottom: 1em;
 }
 article {
   padding: 1.3em;

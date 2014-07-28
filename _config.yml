@@ -24,6 +24,8 @@ markdown: redcarpet
 
 pygments: false
 
+languages: ["pl","en"]
+
 navigation:
 - text: Start
   url:
