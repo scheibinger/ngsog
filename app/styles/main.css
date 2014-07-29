@@ -3416,12 +3416,27 @@ article.kontakt dl > dt:nth-child(n+2) {
   margin-top: 1em;
 }
 article.kontakt .col {
-  width: 20em;
+  width: 17em;
   float: left;
+}
+article.kontakt iframe {
+  float: right;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #ccc;
 }
 @media screen and (max-width: 991px) {
   .contact-data {
     clear: both;
+  }
+  iframe {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  article.kontakt iframe {
+    clear: both;
+    width: 100%;
   }
 }
 .bg-dark-grey.company {
