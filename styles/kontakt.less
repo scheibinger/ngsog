@@ -6,13 +6,36 @@ article.kontakt {
   }
 
   .col {
-    width: 20em;
+    width: 17em;
     float: left;
+  }
+
+  .content {
+
+  }
+
+  iframe {
+    float: right;
+    width: 400px;
+    height:400px;
+    border: 1px solid #ccc;
   }
 }
 
 @media screen and (max-width: @screen-sm-max) {
+
   .contact-data {
     clear: both;
+  }
+
+  iframe {
+    display:none;
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  article.kontakt iframe{
+    clear:both;
+    width:100%;
   }
 }
