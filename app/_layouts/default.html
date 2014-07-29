@@ -55,7 +55,16 @@
 <!-- endbuild -->
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
-<script src="/scripts/main.js"></script>
+<script>
+  $(document).ready(function () {
+    $.cookieBar(
+      {
+        message:"{% t common.cookies-message %}",
+        acceptText:"{% t common.cookies-accept %}"
+      }
+    );
+  });
+</script>
 <!-- endbuild -->
 </body>
 </html>

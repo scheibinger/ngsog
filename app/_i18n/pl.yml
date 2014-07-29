@@ -1,7 +1,8 @@
 common:
   more: więcej
   all-rigths-reserved: Wszystkie prawa zastrzeżone
-
+  cookies-message: Informujemy, iż w naszym serwisie internetowym korzystamy z informacji zapisanych za pomocą plików cookies na urządzeniach końcowych użytkowników.
+  cookies-accept: Rozumiem i Wyrażam zgodę
 home:
   title: Start
 company:

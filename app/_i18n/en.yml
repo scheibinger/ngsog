@@ -1,6 +1,8 @@
 common:
   more: more
   all-rigths-reserved: Wszystkie prawa zastrzeżone
+  cookies-message: We use cookies to track usage and preferences.
+  cookies-accept: I Understand
 home:
   title: Start
 company:
