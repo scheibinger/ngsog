@@ -3284,7 +3284,11 @@ article .pictures-column {
   position: relative;
   top: -1em;
 }
-article .pictures-column a {
+article .pictures-column > a {
+  display: block;
+  margin: 1em;
+}
+article .pictures-column > img {
   display: block;
   margin: 1em;
 }
@@ -3614,9 +3618,6 @@ a.disabled {
     width: 900px;
   }
   .container.offer {
-    width: 900px;
-  }
-  .container.quality {
     width: 900px;
   }
   .hero {
