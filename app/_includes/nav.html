@@ -1,8 +1,8 @@
 <nav>
   <div class="header">
     <div class="lang-switch">
-      <a href="/"><img src="/images/pl.png" alt="polski"></a>
-      <a href="/en/"><img src="/images/en.png" alt="english"></a>
+      <a {% if site.lang == "pl" %}href="/en/"{% else %}class="disabled"{% endif %}>english</a> |
+      <a {% if site.lang == "en" %}href="/"{% else %}class="disabled"{% endif %}>polski</a>
     </div>
     <div class="logos">
       <div>
