@@ -169,9 +169,8 @@
 <!-- endbower -->
 <!-- endbuild -->
 
-<script src="/scripts/lib/jquery.cookiebar.js"
+<script src="/scripts/lib/jquery.cookiebar.js" type="text/javascript"></script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -186,7 +185,16 @@
 <!-- endbuild -->
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
-<script src="/scripts/main.js"></script>
+<script>
+  $(document).ready(function () {
+    $.cookieBar(
+      {
+        message:"Informujemy, iż w naszym serwisie internetowym korzystamy z informacji zapisanych za pomocą plików cookies na urządzeniach końcowych użytkowników.",
+        acceptText:"Rozumiem i Wyrażam zgodę"
+      }
+    );
+  });
+</script>
 <!-- endbuild -->
 </body>
 </html>
