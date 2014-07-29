@@ -3339,6 +3339,10 @@ nav {
   background: #8ed8f8;
   color: #fff;
 }
+.lang-switch {
+  float: right;
+  margin: 1em;
+}
 /* Custom page header */
 .header {
   position: relative;
