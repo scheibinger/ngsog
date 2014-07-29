@@ -3421,6 +3421,15 @@ article.kontakt .col {
     clear: both;
   }
 }
+.bg-dark-grey.company {
+  margin-top: 2em;
+}
+.company .pictures {
+  padding: 2em 0;
+}
+.company .pictures img:nth-child(-n+2) {
+  margin-right: 62px;
+}
 #cookie-bar {
   background: #f7f7f7;
   line-height: 24px;
