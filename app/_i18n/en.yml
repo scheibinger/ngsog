@@ -1,3 +1,6 @@
+common:
+  more: more
+  all-rigths-reserved: Wszystkie prawa zastrzeżone
 home:
   title: Start
 company:
@@ -7,6 +10,7 @@ production:
   offer: Offer
 quality:
   title: Quality
-  certificates: Certificates
+certificates:
+  title: Certificates
 contact:
   title: Contact

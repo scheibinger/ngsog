@@ -27,17 +27,24 @@ pygments: false
 languages: ["pl","en"]
 
 navigation:
-- text: Start
+- en: Start
+  pl: Start
   url:
-- text: Firma
+- pl: Firma
+  en: Company
   url: /firma/
-- text: Produkcja
+- pl: Produkcja
+  en: Production
   url: /produkcja/
-- text: Oferta
+- pl: Oferta
+  en: Offer
   url: /oferta/
-- text: Jakość
+- pl: Jakość
+  en: Quality
   url: /jakosc/
-- text: Certyfikaty
+- pl: Certyfikaty
+  en: Certyfikaty
   url: /certyfikaty/
-- text: Kontakt
+- pl: Kontakt
+  en: Contact
   url: /kontakt/
