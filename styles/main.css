@@ -3291,6 +3291,7 @@ article .pictures-column a {
 @media screen and (min-width: 768px) {
   article .pictures-column {
     position: relative;
+    margin: 0 1em;
     top: -3em;
   }
 }
@@ -3588,6 +3589,15 @@ article img.big-picture {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1200px;
+  }
+  .container.certificates {
+    width: 900px;
+  }
+  .container.offer {
+    width: 900px;
+  }
+  .container.quality {
+    width: 900px;
   }
   .hero {
     background-image: url(../images/ngsog/hero1.jpg);
