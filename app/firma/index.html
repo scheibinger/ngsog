@@ -2,16 +2,25 @@
 layout: default
 title: Firma - NGS Oil & Gas
 ---
-<article class="container">
-  <h1>{% t company.title %}</h1>
+<article class="container company">
+  <div class="row">
+    <div class="col-lg-8">
+      <h1>{% t company.title %}</h1>
 
-  <div class="pictures-column">
-    <a href="/images/ngsog/firma/1.jpg" title="NGS Oil & Gas 2012"> <img src="/images/ngsog/firma/1_thumb.jpg" alt="" /> </a>
-    <a href="/images/ngsog/firma/2.jpg" title="NGS Oil & Gas 2012"> <img src="/images/ngsog/firma/2_thumb.jpg" alt="" /> </a>
-    <a href="/images/ngsog/firma/3.jpg" title="NGS Oil & Gas 2012"> <img src="/images/ngsog/firma/3_thumb.jpg" alt="" /> </a>
-    <a href="/images/ngsog/firma/4.jpg" title="NGS Oil & Gas 2012"> <img src="/images/ngsog/firma/4_thumb.jpg" alt="" /> </a>
+      {% tf firma/content.html %}
+
+    </div>
+    <div class="col-lg-4">
+      <img class="big-picture" src="/images/ngsog/firma/ofirmie-big.jpg" alt="O firmie"/>
+    </div>
   </div>
 
-  {% tf firma/content.html %}
-
 </article>
+<div class="bg-dark-grey company">
+  <div class="container pictures">
+    <img class="big-picture" src="/images/ngsog/firma/ofirmie-2.jpg" alt="O firmie"/>
+    <img class="big-picture" src="/images/ngsog/firma/ofirmie-3.jpg" alt="O firmie"/>
+    <img class="big-picture" src="/images/ngsog/firma/ofirmie-4.jpg" alt="O firmie"/>
+
+  </div>
+</div>
