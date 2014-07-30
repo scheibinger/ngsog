@@ -12,6 +12,10 @@ title: NGSOG
   </div>
 </div>
 
+{% if site.lang == "en" %}
+{% assign langPrefix = '/en' %}
+{% endif %}
+
 <div class="bg-dark-grey">
   <div class="container">
     <div class="row marketing">
@@ -20,7 +24,7 @@ title: NGSOG
 
         <div class="summary">
           {% tf start/o-firmie.html %}
-          <a href="/firma/" class="btn btn-default">
+          <a href="{{ langPrefix }}/firma/" class="btn btn-default">
             {% t common.more %}
           </a>
         </div>
@@ -30,7 +34,7 @@ title: NGSOG
         <div class="summary">
           {% tf start/offshore.html %}
 
-          <a href="/produkcja/" class="btn btn-default">
+          <a href="{{ langPrefix }}/produkcja/" class="btn btn-default">
             {% t common.more %}
           </a>
         </div>
@@ -41,7 +45,7 @@ title: NGSOG
 
         <div class="summary">
           {% tf start/jakosc.html %}
-          <a href="/jakosc/" class="btn btn-default">
+          <a href="{{ langPrefix }}/jakosc/" class="btn btn-default">
             {% t common.more %}
           </a>
         </div>
