@@ -6,6 +6,7 @@
 @import "kontakt";
 @import "company";
 @import "quality";
+@import "offer";
 @import "cookie-bar";
 
 h2 {
@@ -30,8 +31,34 @@ article {
   img.big-picture{
     margin-top:4em;
   }
+
+  p,li,dd {
+    color: #686868;
+  }
+
+  strong {
+    color:#000;
+  }
 }
 
+ul.list {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+
+ul.list > li:before {
+  content: "";
+  border-color: transparent @blue;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
 
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -136,7 +163,6 @@ a.disabled {
     max-width: 1200px;
 
     &.certificates{ width:900px; }
-    &.offer{ width:900px; }
   }
 
   .hero {

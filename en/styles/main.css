@@ -3452,6 +3452,22 @@ article.kontakt iframe {
 .company .pictures img:nth-child(-n+2) {
   margin-right: 62px;
 }
+@media screen and (min-width: 1200px) {
+  .welding,
+  .machining {
+    width: 50%;
+    float: left;
+    padding-right: 15%;
+    box-sizing: border-box;
+  }
+}
+.container.offer.pictures {
+  margin-top: 2em;
+  padding: 2em;
+}
+.container.offer.pictures img {
+  margin: 1em;
+}
 #cookie-bar {
   background: #f7f7f7;
   line-height: 24px;
@@ -3532,6 +3548,31 @@ article img.img-indent {
 }
 article img.big-picture {
   margin-top: 4em;
+}
+article p,
+article li,
+article dd {
+  color: #686868;
+}
+article strong {
+  color: #000;
+}
+ul.list {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+ul.list > li:before {
+  content: "";
+  border-color: transparent #8ed8f8;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -3615,9 +3656,6 @@ a.disabled {
     max-width: 1200px;
   }
   .container.certificates {
-    width: 900px;
-  }
-  .container.offer {
     width: 900px;
   }
   .hero {
