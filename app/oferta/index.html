@@ -5,15 +5,25 @@ title: Firma - NGS Oil & Gas
 <article class="container offer">
   <h1>{% t production.offer %}</h1>
 
-  {% tf oferta/podsumowanie.html %}
-  {% tf oferta/spawanie.html %}
+  <div>
+    <div class="welding">
+      {% tf oferta/spawanie.html %}
+    </div>
+    <div class="machining">
+      {% tf oferta/obrobka-mechaniczna.html %}
+    </div>
+  </div>
+
+  <!--
   <p class="gallery">
     <a href="/images/ngsog/oferta/produkt-1.jpeg"> <img src="/images/ngsog/oferta/produkt-1-thumb.jpeg" alt="produkt 1"/> </a>
     <a href="/images/ngsog/oferta/produkt-2.jpeg"> <img src="/images/ngsog/oferta/produkt-2-thumb.jpeg" alt="produkt 2"/> </a>
-  </p>
+  </p>-->
 
-  {% tf oferta/obrobka-mechaniczna.html %}
-  <p class="gallery">
+</article>
+
+<div class="bg-dark-grey">
+  <p class="container offer pictures">
     <a href="/images/ngsog/oferta/1.jpg"> <img src="/images/ngsog/oferta/1_thumb.jpg" alt="produkt 1"/> </a>
     <a href="/images/ngsog/oferta/2.jpg"> <img src="/images/ngsog/oferta/2_thumb.jpg" alt="produkt 2"/> </a>
     <a href="/images/ngsog/oferta/3.jpg"> <img src="/images/ngsog/oferta/3_thumb.jpg" alt="produkt 3"/> </a>
@@ -23,4 +33,4 @@ title: Firma - NGS Oil & Gas
     <a href="/images/ngsog/oferta/produkt-5.jpeg"> <img src="/images/ngsog/oferta/produkt-5-thumb.jpeg" alt="produkt 7"/> </a>
     <a href="/images/ngsog/oferta/produkt-6.jpeg"> <img src="/images/ngsog/oferta/produkt-6-thumb.jpeg" alt="produkt 8"/> </a>
   </p>
-</article>
+</div>
