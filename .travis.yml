@@ -6,6 +6,8 @@ node_js:
 rvm:
   - 2.0.0
 install:
+  - git config --global user.email "travis@ngsog.pl"
+  - git config --global user.name "Travis"
   - bundle install
   - travis_retry gem install --no-document jekyll
   - travis_retry npm install -g grunt-cli
