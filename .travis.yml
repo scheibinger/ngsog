@@ -3,6 +3,8 @@ language:
   - ruby
 node_js:
   - "0.10"
+rvm:
+  - 2.1.0
 install:
   - travis_retry gem install --no-document jekyll
   - travis_retry npm install -g grunt-cli
