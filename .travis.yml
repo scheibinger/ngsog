@@ -10,4 +10,4 @@ install:
   - travis_retry gem install --no-document jekyll
   - travis_retry npm install -g grunt-cli
   - travis_retry npm install
-before_script: grunt build
+before_script: grunt deploy
