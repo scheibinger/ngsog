@@ -19,13 +19,14 @@ i=0;
 for file in $1*; do
 	((i++));
 	echo $file;
-	imgPath="$albumPath/$i.jpg";
+	base=$(basename ${file})
+	imgPath="$albumPath/$base.jpg";
 	echo "creating $imgPath";
-	thumbPath="$albumPath/${i}_thumb.jpg";
+	thumbPath="$albumPath/${base}_thumb.jpg";
 	convert $file -resize x900 $imgPath;
 	echo "creating $thumbPath";
 	#convert $file -resize x111 $thumbPath;
 	convert $file -resize "200x133^" -gravity center -crop 200x133+0+0 +repage $thumbPath;
-	echo "<a href=\"/images/ngsog/$2/$i.jpg\" title=\"NGS Oil & Gas 2012\"> <img src=\"/images/ngsog/$2/${i}_thumb.jpg\" alt=\"\" /> </a>"  >> "$albumPath/content.html";
+	echo "<a href=\"/images/ngsog/$2/$base.jpg\" title=\"NGS Oil & Gas 2012\"> <img src=\"/images/ngsog/$2/${base}_thumb.jpg\" alt=\"\" /> </a>"  >> "$albumPath/content.html";
 done
 echo "</div><script type=\"text/javascript\">\$(function() {\$('#gallery a').lightBox();});</script>" >> "$albumPath/content.html";
