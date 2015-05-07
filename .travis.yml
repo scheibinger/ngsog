@@ -15,4 +15,4 @@ before_script:
   - git config --global user.name "Travis"
   - git remote rm origin
   - git remote add origin https://scheibinger:${GH_TOKEN}@github.com/scheibinger/ngsog.git
-script: grunt deploy
+script: grunt deployTravis

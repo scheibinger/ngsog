@@ -182,8 +182,26 @@ module.exports = function (grunt) {
           branch: 'build'
         }
       }
-    }
+    },
 
+    'gh-pages': {
+      options: {
+        branch: 'gh-pages',
+        base: 'dist'
+      },
+      deploy: {
+        options: {
+          user: {
+            name: 'travis',
+            email: 'scheibinger@gmail.com'
+          },
+          repo: 'https://' + process.env.GH_TOKEN + '@github.com/scheibinger/ngsog.git',
+          message: 'publish gh-pages',
+          silent: true
+        },
+        src: ['**/*']
+      }
+    }
   });
 
   // Default task(s).
@@ -213,5 +231,10 @@ module.exports = function (grunt) {
   grunt.registerTask('deploy', [
     'build',
     'buildcontrol:pages'
+  ]);
+
+  grunt.registerTask('deployTravis', [
+    'build',
+    'gh-pages:deploy'
   ]);
 };
