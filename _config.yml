@@ -9,6 +9,8 @@ author:
   name: Radoslaw Scheibinger
   email: rscheibinger@ebay.com
 
+baseurl: ""
+
 # Grunt handles images and assets.
 exclude: [ 'fonts']
 
@@ -22,7 +24,7 @@ show_drafts: true
 markdown: redcarpet
 #   extensions: ['fenced_code_blocks', 'smart']
 
-pygments: false
+highlighter: false
 
 languages: ["pl","en"]
 
@@ -48,3 +50,6 @@ navigation:
 - pl: Kontakt
   en: Contact
   url: /kontakt/
+
+plugins:
+  - jekyll-multiple-languages-plugin

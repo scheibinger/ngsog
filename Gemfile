@@ -1,6 +1,12 @@
-source "http://rubygems.org"
+# frozen_string_literal: true
 
-gem 'jekyll', '~>1.4.0'
+source "https://rubygems.org"
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+# gem "rails"
+
+gem "jekyll", "~> 3.8"
 gem 'redcarpet'
 gem 'sass', '>=3.2'
 gem 'jekyll-multiple-languages-plugin'
