@@ -3651,6 +3651,9 @@ a.disabled {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
+  .logo img {
+    width: 150px;
+  }
   .hero {
     display: none;
   }
@@ -3667,6 +3670,13 @@ a.disabled {
 }
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+  .logo {
+    height: 13rem;
+    overflow: hidden;
+  }
+  .logo img {
+    width: 300px;
+  }
   .container {
     max-width: 1200px;
   }
