@@ -86,7 +86,6 @@ a.disabled {
   color:@gray;
 }
 
-
 .slogan {
   background-image: url(../images/bg-3.gif);
   p {
@@ -136,6 +135,10 @@ a.disabled {
 
 
 @media screen and (max-width: @screen-xs-max) {
+  .logo img {
+    width: 150px;
+  }
+
   .hero {
     display:none;
   }
@@ -159,6 +162,14 @@ a.disabled {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: @screen-sm) {
+  .logo {
+    height: 13rem;
+    overflow: hidden;
+  }
+  .logo img {
+    width: 300px;
+  }
+
   .container {
     max-width: 1200px;
   }
